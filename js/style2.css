@@ -1,0 +1,62 @@
+body {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+form {
+    padding: 15px;
+    background-color: dimgray;
+    border-radius: 5px;
+}
+
+input[type="text"] {
+    font-size: 18px;
+    padding: 5px;
+    color: black;
+    border-radius: 2px;
+    margin: 10px 0;
+    border: none;
+    outline: none;
+}
+
+.tombol{
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.tombol input{
+    font-size: 18px;
+    padding: 5px 10px;
+    background-color: lightblue;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin: 10px 0;
+    transition: .8s;
+}
+
+.tombol input:hover{
+    background-color: aqua;
+}
+
+input[type="reset"] {
+    font-size: 18px;
+    outline: none;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    display: block;
+    margin: 10px auto;
+    width: 80%;
+    border-radius: 2px;
+}
+
+input[type="reset"]:hover{
+    opacity: .8;
+}
+
+input[name="hasil"] {
+    height: 80px;
+}

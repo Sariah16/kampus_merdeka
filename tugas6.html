@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="js/style2.css">
+</head>
+<body>
+    
+    <form name="kalkulator"> 
+        
+                   <input type="text" name="a1" placeholder="Angka 1 " value="" /><br />
+                   <input type="text" name="a2" placeholder="Angka 2" value="" /><br />
+                    <input type="text" name="hasil"  value="" readonly /> <br />
+                    <div class="tombol">
+                        <input type="button"  onclick="hitung('+')" value="+" />
+                        <input type="button"  onclick="hitung('-')" value="-" />
+                        <input type="button"  onclick="hitung('/')" value="/" />
+                        <input type="button"  onclick="hitung('*')" value="*" />
+                        <input type="button"  onclick="hitung('^')" value="^" />
+                    </div>
+
+                    <input type="reset" name="unproses" onclick="hapus()" value="Batal" />
+                
+    
+    </form>
+        <script src="js/calc.js"></script>
+</body>
+</html>
+
+
+        
+        
