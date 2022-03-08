@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width= <device-width>, initial-scale=1.0">
+    <title>Gempa</title>
+    <link rel="stylesheet" href="js/style3.css">
+</head>
+
+<body>
+    <div class="container">
+    <script>
+        class gempa {
+            constructor(lokasi, skala) {
+                this.lokasi = lokasi;
+                this.skala = skala;
+
+            }
+            dampak () {
+               let dampak;
+               if (this.skala >= 0 && this.skala <= 2  ) {
+                   dampak = "Dampaknya Tidak Terasa";
+               }  else if(this.skala > 2 && this.skala <= 4) {
+                   dampak = "Dampaknya Bangunan Retak-retak";
+               } else if (this.skala > 4 && this.skala <= 6) {
+                   dampak = "Dampaknya Bangunan Roboh";
+               } else if( this.skala > 6) {
+                   dampak = "Dampaknya bangunan roboh dan berpotensi tsunami";
+               }
+               else {dampak = "Input Skala Tidak Valid"}
+               document.write(`Lokasi Gempa : ${this.lokasi}
+               <br/> Skala : ${this.skala}
+               <br/> Dampak : ${dampak} <hr/>`);
+            }
+        }
+         let negara = ["indonesia", "Brunei", "Kuala Lumpur", "Moscow", "Bangkok", "Tokyo", "Banten", "Seoul", "Jakarta", "Disney", "Argentina"];
+        let skalaGempa = [2.3, 4.2, 3.2, 7.8, 9.0, 3.2, 8.5, 4.2, 3.2, 5.4, 7.6];
+        for(let x in negara){
+                
+        let Pasaman = new gempa(negara[x], skalaGempa[x]);
+        Pasaman.dampak();
+        }
+    </script>
+    </form>
+</body>
+</html>
